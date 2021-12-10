@@ -1,77 +1,80 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.geometry.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.effect.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
-<?import javafx.scene.image.ImageView?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Accordion?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.effect.Reflection?>
 <?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Circle?>
-<BorderPane styleClass="green-theme"
-            xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="top.zwx.crm.manage.controller.MainController">
+<?import javafx.scene.text.Font?>
+
+<BorderPane styleClass="green-theme" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.zwx.crm.manage.controller.MainController">
     <top>
         <AnchorPane prefHeight="80.0">
-            <Label text="图书后台管理系统" onMouseClicked="#listDefault"
-                   AnchorPane.topAnchor="20" AnchorPane.leftAnchor="10">
+            <Label onMouseClicked="#listDefault" text="客户关系管理后台" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="20">
                 <effect>
-                    <Reflection bottomOpacity="0.2" fraction="0.5" topOffset="-5.0"/>
+                    <Reflection bottomOpacity="0.2" fraction="0.5" topOffset="-5.0" />
                 </effect>
                 <font>
-                    <Font name="System Bold" size="26.0"/>
+                    <Font name="System Bold" size="26.0" />
                 </font>
             </Label>
-            <ImageView fitWidth="40" fitHeight="40"
-                       AnchorPane.topAnchor="15" AnchorPane.rightAnchor="120">
-                <Image backgroundLoading="true" url="https://zwxkx.oss-cn-hangzhou.aliyuncs.com/markdown/202109171947637.webp"/>
+            <ImageView fitHeight="40" fitWidth="40" AnchorPane.rightAnchor="120" AnchorPane.topAnchor="15">
+                <Image backgroundLoading="true" url="https://zwxkx.oss-cn-hangzhou.aliyuncs.com/markdown/202109171947637.webp" />
                 <clip>
-                    <Circle fill="aqua" centerX="20" centerY="20">
+                    <Circle centerX="20" centerY="20" fill="aqua">
                         <radius>20</radius>
                     </Circle>
                 </clip>
             </ImageView>
-            <Button text="退出系统" styleClass="blue-theme" onMouseClicked="#exit"
-                    AnchorPane.topAnchor="20" AnchorPane.rightAnchor="20"/>
+            <Button onMouseClicked="#exit" styleClass="blue-theme" text="退出系统" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20" />
         </AnchorPane>
     </top>
     <center>
-        <SplitPane>
-            <AnchorPane styleClass="dark-gray-theme" minWidth="200" maxWidth="200">
-                <Accordion AnchorPane.leftAnchor="0.0"
-                           AnchorPane.rightAnchor="0.0"
-                           AnchorPane.topAnchor="0.0">
+        <SplitPane dividerPositions="0.5">
+            <AnchorPane maxWidth="200" minWidth="200" styleClass="dark-gray-theme">
+                <Accordion AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <panes>
                         <TitledPane alignment="TOP_LEFT" text="类别管理">
                             <VBox minHeight="100" spacing="10" styleClass="dark-theme">
-                                <Button styleClass="menu-btn" text="图书类别" onAction="#listType"/>
-                                <Button styleClass="menu-btn" text="Webview" onAction="#showWebView"/>
+                                <Button onAction="#listType" styleClass="menu-btn" text="图书类别" />
+                                <Button onAction="#showWebView" styleClass="menu-btn" text="Webview" />
                             </VBox>
                         </TitledPane>
                         <TitledPane alignment="TOP_LEFT" text="图书管理">
                             <VBox minHeight="130" spacing="10" styleClass="dark-theme">
-                                <Button styleClass="menu-btn" text="图书信息" onAction="#listBook"/>
-                                <Button styleClass="menu-btn" text="图书浏览" onAction="#viewBook"/>
-                                <Button styleClass="menu-btn" text="统计分析" onAction="#listBookAnalysis"/>
+                                <Button onAction="#listBook" styleClass="menu-btn" text="图书信息" />
+                                <Button onAction="#viewBook" styleClass="menu-btn" text="图书浏览" />
+                                <Button onAction="#listBookAnalysis" styleClass="menu-btn" text="统计分析" />
                             </VBox>
                         </TitledPane>
                         <TitledPane alignment="TOP_LEFT" text="用户管理">
                             <VBox minHeight="130" spacing="10" styleClass="dark-theme">
-                                <Button styleClass="menu-btn" text="管理员信息" onAction="#listAdmin"/>
-                                <Button styleClass="menu-btn" text="读者信息" onAction="#listUser"/>
-                                <Button styleClass="menu-btn" text="统计分析" onAction="#listUserAnalysis"/>
+                                <Button onAction="#listAdmin" styleClass="menu-btn" text="管理员信息" />
+                                <Button onAction="#listUser" styleClass="menu-btn" text="读者信息" />
+                                <Button onAction="#listUserAnalysis" styleClass="menu-btn" text="统计分析" />
                             </VBox>
                         </TitledPane>
                         <TitledPane alignment="TOP_LEFT" text="借阅管理">
                             <VBox minHeight="130" spacing="10" styleClass="dark-theme">
-                                <Button styleClass="menu-btn" text="借阅查询"/>
-                                <Button styleClass="menu-btn" text="统计分析"/>
+                                <Button styleClass="menu-btn" text="借阅查询" />
+                                <Button styleClass="menu-btn" text="统计分析" />
                             </VBox>
                         </TitledPane>
                         <TitledPane alignment="TOP_LEFT" text="系统维护">
                             <VBox minHeight="130" spacing="10" styleClass="dark-theme">
-                                <Button styleClass="menu-btn" text="系统初始化"/>
-                                <Button styleClass="menu-btn" text="数据备份"/>
-                                <Button styleClass="menu-btn" text="主题设置"/>
+                                <Button styleClass="menu-btn" text="系统初始化" />
+                                <Button styleClass="menu-btn" text="数据备份" />
+                                <Button styleClass="menu-btn" text="主题设置" />
                             </VBox>
                         </TitledPane>
                     </panes>
@@ -80,16 +83,15 @@
 
             <!--中间内容面板-->
             <!--滚动面板-->
-            <ScrollPane fitToWidth="true" hbarPolicy="NEVER"
-                        vbarPolicy="AS_NEEDED" styleClass="default-theme">
-                <StackPane fx:id="mainContainer" styleClass="default-theme" minWidth="1060">
+            <ScrollPane fitToWidth="true" hbarPolicy="NEVER" styleClass="default-theme" vbarPolicy="AS_NEEDED">
+                <StackPane fx:id="mainContainer" minWidth="1060" styleClass="default-theme">
                     <padding>
-                        <Insets top="10" left="30" bottom="5" right="10"/>
+                        <Insets bottom="5" left="30" right="10" top="10" />
                     </padding>
                 </StackPane>
             </ScrollPane>
             <padding>
-                <Insets top="10"/>
+                <Insets top="10" />
             </padding>
         </SplitPane>
     </center>

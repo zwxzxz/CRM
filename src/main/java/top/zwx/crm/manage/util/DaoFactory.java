@@ -3,14 +3,13 @@ package top.zwx.crm.manage.util;
 
 
 //import top.mqxu.book.manage.dao.BookDAO;
-//import top.mqxu.book.manage.dao.CategoryDAO;
 //import top.mqxu.book.manage.dao.UserDAO;
-//import top.mqxu.book.manage.dao.impl.AdminDAOImpl;
 //import top.mqxu.book.manage.dao.impl.BookDAOImpl;
-//import top.mqxu.book.manage.dao.impl.CategoryDAOImpl;
 //import top.mqxu.book.manage.dao.impl.UserDAOImpl;
 import top.zwx.crm.manage.dao.AdminDAO;
+import top.zwx.crm.manage.dao.CategoryDAO;
 import top.zwx.crm.manage.dao.impl.AdminDAOImpl;
+import top.zwx.crm.manage.dao.impl.CategoryDAOImpl;
 
 /**
  * 工厂类，用静态方法来生成各个DAO实例
@@ -23,9 +22,9 @@ public class DaoFactory {
      *
      * @return CategoryDAO
      */
-    //public static CategoryDAO getCategoryDAOInstance() {
-    //    return new CategoryDAOImpl();
-    //}
+    public static CategoryDAO getCategoryDAOInstance() {
+        return new CategoryDAOImpl();
+    }
 
     /**
      * 静态方法，返回TypeDAO实现类的对象

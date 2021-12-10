@@ -12,4 +12,13 @@ module top.zwx.crmmanage {
 
     opens top.zwx.crm.manage.controller to javafx.fxml;
     exports top.zwx.crm.manage.controller;
+
+    opens top.zwx.crm.manage.dao to javafx.fxml;
+    exports top.zwx.crm.manage.dao;
+
+    opens top.zwx.crm.manage.entity to javafx.fxml;
+    exports top.zwx.crm.manage.entity;
+
+    opens top.zwx.crm.manage.util to javafx.fxml;
+    exports top.zwx.crm.manage.util;
 }
