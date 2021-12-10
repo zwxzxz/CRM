@@ -5,7 +5,7 @@
 }
 
 .login-bg {
-    -fx-background-image: url(../img/img18.jpg);
+    -fx-background-image: url(../img/loginbg.jpg);
     -fx-background-size: cover;
 }
 
