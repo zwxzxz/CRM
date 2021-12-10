@@ -10,4 +10,6 @@ module top.zwx.crmmanage {
     opens top.zwx.crm.manage to javafx.fxml;
     exports top.zwx.crm.manage;
 
+    opens top.zwx.crm.manage.controller to javafx.fxml;
+    exports top.zwx.crm.manage.controller;
 }
