@@ -1,48 +1,56 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.layout.*?>
 
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
-<?import javafx.scene.control.PasswordField?>
 <?import javafx.geometry.Insets?>
-<?import javafx.scene.image.ImageView?>
-<?import javafx.scene.image.Image?>
-<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.Button?>
-<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="top.zwx.crm.manage.controller.AdminController" styleClass="login-bg">
-    <AnchorPane AnchorPane.topAnchor="100" AnchorPane.leftAnchor="300" AnchorPane.rightAnchor="300"
-                styleClass="login-card">
-        <Label text="系统管理员登录" styleClass="login-title" AnchorPane.topAnchor="25" AnchorPane.leftAnchor="160"/>
-        <Label text="图书管理系统后台" styleClass="font-gray" AnchorPane.topAnchor="65" AnchorPane.leftAnchor="190"/>
-        <VBox prefWidth="330" AnchorPane.topAnchor="90" AnchorPane.leftAnchor="100" spacing="20">
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane styleClass="login-bg" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.zwx.crm.manage.controller.AdminController">
+    <AnchorPane opacity="0.89" styleClass="login-card" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="10.0">
+        <Label alignment="TOP_CENTER" styleClass="login-title" text="系统管理员登录" textFill="#2c2a2a" AnchorPane.leftAnchor="112.0" AnchorPane.topAnchor="27.0">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+        <Label styleClass="font-gray" text="客户关系管理系统后台" AnchorPane.leftAnchor="147.0" AnchorPane.topAnchor="63.0" />
+        <VBox prefWidth="330" spacing="20" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="90.0">
             <!--focusTraversable="false"：让输入框不获取焦点-->
-            <TextField promptText="账号" focusTraversable="false" fx:id="accountField"/>
-            <PasswordField promptText="密码" focusTraversable="false" fx:id="passwordField"/>
+            <TextField fx:id="accountField" focusTraversable="false" promptText="账号" />
+            <PasswordField fx:id="passwordField" focusTraversable="false" promptText="密码" />
             <HBox spacing="20">
-                <TextField promptText="验证码" focusTraversable="false" prefWidth="180"/>
-                <ImageView fitWidth="80" fitHeight="30">
-                    <Image url="@../img/verify.png"/>
+                <TextField focusTraversable="false" prefWidth="180" promptText="验证码" />
+                <ImageView fitHeight="30" fitWidth="80">
+                    <Image url="@../img/verify.png" />
                 </ImageView>
             </HBox>
             <AnchorPane>
-                <CheckBox text="记住密码" AnchorPane.leftAnchor="0"/>
-                <Label text="忘记密码" AnchorPane.rightAnchor="0" styleClass="font-green"/>
+                <CheckBox text="记住密码" AnchorPane.leftAnchor="0" />
+                <Label styleClass="font-green" text="忘记密码" AnchorPane.rightAnchor="21.016798964530892" />
             </AnchorPane>
-            <Button text="登录" styleClass="login-btn" onAction="#login" />
+            <Button onAction="#login" styleClass="login-btn" text="登录" />
 
-            <HBox spacing="12" alignment="BOTTOM_LEFT">
-                <Label text="社交账号登录" styleClass="font-gray"/>
+            <HBox alignment="BOTTOM_LEFT" spacing="12">
+                <Label styleClass="font-gray" text="社交账号登录" />
                 <ImageView>
-                    <Image url="@../icon/weibo.png"/>
+                    <Image url="@../icon/weibo.png" />
                 </ImageView>
                 <ImageView>
-                    <Image url="@../icon/wechat.png"/>
+                    <Image url="@../icon/wechat.png" />
                 </ImageView>
-                <Label text="注册账号" styleClass="font-green"/>
+                <Label styleClass="font-green" text="注册账号">
+               <padding>
+                  <Insets left="20.0" />
+               </padding></Label>
             </HBox>
             <padding>
-                <Insets top="20" left="20" right="20" bottom="20"/>
+                <Insets bottom="20" left="20" right="20" top="20" />
             </padding>
         </VBox>
     </AnchorPane>
