@@ -3,21 +3,36 @@ package top.zwx.crm.manage.util;
 
 
 
-//import top.mqxu.book.manage.dao.UserDAO;
-//import top.mqxu.book.manage.dao.impl.UserDAOImpl;
-import top.zwx.crm.manage.dao.AdminDAO;
-import top.zwx.crm.manage.dao.BookDAO;
-import top.zwx.crm.manage.dao.CategoryDAO;
-import top.zwx.crm.manage.dao.impl.AdminDAOImpl;
-import top.zwx.crm.manage.dao.impl.BookDAOImpl;
-import top.zwx.crm.manage.dao.impl.CategoryDAOImpl;
+import top.zwx.crm.manage.dao.*;
+import top.zwx.crm.manage.dao.impl.*;
+import top.zwx.crm.manage.entity.Customer;
 
 /**
  * 工厂类，用静态方法来生成各个DAO实例
  *
- * @author mqxu
+ * @author zwx
  */
 public class DaoFactory {
+    /**
+     * 静态方法，返回TypeDAO实现类的对象
+     *
+     * @return CustomerDAO
+     */
+    public static CustomerDAO getCustomerDAOInstance(){
+        return new CustomerDAOImpl();
+    }
+
+    /**
+     * 静态方法，返回SourceCategoryDAO实现类的对象
+     *
+     * @return SourceCategoryDAO
+     */
+    public static SourceCategoryDAO getSourceCategoryDAOInstance() {
+        return new SourceCategoryDAOImpl();
+    }
+
+
+
     /**
      * 静态方法，返回CategoryDAO实现类的对象
      *
@@ -36,14 +51,15 @@ public class DaoFactory {
         return new BookDAOImpl();
     }
 
+
     /**
      * 静态方法，返回UserDAO实现类的对象
      *
      * @return UserDAO
      */
-    //public static UserDAO getUserDAOInstance() {
-    //    return new UserDAOImpl();
-    //}
+    public static UserDAO getUserDAOInstance() {
+        return new UserDAOImpl();
+    }
 
     /**
      * 静态方法，返回AdminDAO实现类的对象

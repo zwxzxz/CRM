@@ -32,6 +32,13 @@ public class MainController implements Initializable {
         }
     }
 
+    public void listgonghai() throws Exception {
+        switchView("gonghaichi.fxml");
+    }
+    public void listxiansuochi() throws Exception {
+        switchView("xiansuochi.fxml");
+    }
+
     public void listDefault() throws Exception {
         switchView("default.fxml");
     }
@@ -44,9 +51,6 @@ public class MainController implements Initializable {
         switchView("webview.fxml");
     }
 
-    public void listBook() throws Exception {
-        switchView("book.fxml");
-    }
 
     public void viewBook() throws Exception {
         switchView("view_book.fxml");

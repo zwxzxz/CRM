@@ -39,7 +39,7 @@ import java.util.ResourceBundle;
  *
  * @author mqxu
  */
-public class BookController implements Initializable {
+public class gonghaichiController implements Initializable {
     /**
      * 布局文件中的表格视图对象，用来显示数据库中读取的所有图书信息
      */

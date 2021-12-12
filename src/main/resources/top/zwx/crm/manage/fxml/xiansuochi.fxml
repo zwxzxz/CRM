@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.zwx.crm.manage.controller.xiansuochiController">
+    <HBox alignment="BOTTOM_CENTER" spacing="10" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10">
+        <Button onAction="#newCustomerStage" styleClass="green-theme,btn-radius" text="新建线索" />
+        <Button onAction="#export" styleClass="blue-theme,btn-radius" text="导出数据" />
+    </HBox>
+    <HBox alignment="CENTER" spacing="10" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="60">
+        <ComboBox fx:id="categoryComboBox" prefWidth="150" promptText="选择线索来源" />
+        <TextField fx:id="keywordsField" promptText="请输入关键词" />
+        <Button onAction="#search" styleClass="green-theme" text="搜索" />
+    </HBox>
+    <TableView fx:id="customerTable" prefWidth="1000" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="110">
+        <columns>
+            <TableColumn text="ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="姓名">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="公司">
+                <cellValueFactory>
+                    <PropertyValueFactory property="company" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="线索来源">
+                <cellValueFactory>
+                    <PropertyValueFactory property="source" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="线索详细">
+                <cellValueFactory>
+                    <PropertyValueFactory property="detailed" />
+                </cellValueFactory>
+            </TableColumn>
+         <TableColumn  text="线索池">
+            <cellValueFactory>
+                <PropertyValueFactory property="pool" />
+            </cellValueFactory>
+        </TableColumn>
+         <TableColumn  text="创建时间" >
+             <cellValueFactory>
+                 <PropertyValueFactory property="createtime" />
+             </cellValueFactory>
+         </TableColumn>
+        </columns>
+    </TableView>
+</AnchorPane>

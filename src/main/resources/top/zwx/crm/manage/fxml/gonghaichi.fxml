@@ -7,7 +7,7 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ComboBox?>
 <AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="top.zwx.crm.manage.controller.BookController">
+            fx:controller="top.zwx.crm.manage.controller.gonghaichiController">
     <HBox alignment="BOTTOM_CENTER" AnchorPane.topAnchor="10" AnchorPane.leftAnchor="10" spacing="10">
         <Button styleClass="green-theme,btn-radius" text="添加图书" onAction="#newBookStage"/>
         <Button styleClass="blue-theme,btn-radius" text="导出数据" onAction="#export"/>

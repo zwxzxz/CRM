@@ -29,7 +29,7 @@
                 </font>
             </Label>
             <ImageView fitHeight="40" fitWidth="40" AnchorPane.rightAnchor="120" AnchorPane.topAnchor="15">
-                <Image backgroundLoading="true" url="https://zwxkx.oss-cn-hangzhou.aliyuncs.com/markdown/202109171947637.webp" />
+                <Image backgroundLoading="true" url="@../img/avater.jpg" />
                 <clip>
                     <Circle centerX="20" centerY="20" fill="aqua">
                         <radius>20</radius>
@@ -44,35 +44,31 @@
             <AnchorPane maxWidth="200" minWidth="200" styleClass="dark-gray-theme">
                 <Accordion AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
                     <panes>
-                        <TitledPane alignment="TOP_LEFT" text="类别管理">
+                        <TitledPane alignment="TOP_LEFT" text="客户管理">
                             <VBox minHeight="100" spacing="10" styleClass="dark-theme">
-                                <Button onAction="#listType" styleClass="menu-btn" text="图书类别" />
-                                <Button onAction="#showWebView" styleClass="menu-btn" text="Webview" />
+                                <Button onAction="#listxiansuochi" text="线索池" styleClass="menu-btn" />
+                                <Button onAction="#listType" styleClass="menu-btn" text="线索" />
+                                <Button onAction="#listgonghai" styleClass="menu-btn" text="公海池" />
+                                <Button mnemonicParsing="false" styleClass="menu-btn" text="客户" />
                             </VBox>
                         </TitledPane>
-                        <TitledPane alignment="TOP_LEFT" text="图书管理">
+                        <TitledPane alignment="TOP_LEFT" text="客户分析">
                             <VBox minHeight="130" spacing="10" styleClass="dark-theme">
-                                <Button onAction="#listBook" styleClass="menu-btn" text="图书信息" />
-                                <Button onAction="#viewBook" styleClass="menu-btn" text="图书浏览" />
-                                <Button onAction="#listBookAnalysis" styleClass="menu-btn" text="统计分析" />
+                                <Button onAction="#listUserAnalysis" styleClass="menu-btn" text="客户来源" />
+                                <Button onAction="#viewBook" styleClass="menu-btn" text="客户状态分析" />
+                                <Button onAction="#listBookAnalysis" styleClass="menu-btn" text="我的信息" />
                             </VBox>
                         </TitledPane>
                         <TitledPane alignment="TOP_LEFT" text="用户管理">
                             <VBox minHeight="130" spacing="10" styleClass="dark-theme">
                                 <Button onAction="#listAdmin" styleClass="menu-btn" text="管理员信息" />
-                                <Button onAction="#listUser" styleClass="menu-btn" text="读者信息" />
+                                <Button onAction="#listUser" styleClass="menu-btn" text="员工信息" />
                                 <Button onAction="#listUserAnalysis" styleClass="menu-btn" text="统计分析" />
-                            </VBox>
-                        </TitledPane>
-                        <TitledPane alignment="TOP_LEFT" text="借阅管理">
-                            <VBox minHeight="130" spacing="10" styleClass="dark-theme">
-                                <Button styleClass="menu-btn" text="借阅查询" />
-                                <Button styleClass="menu-btn" text="统计分析" />
                             </VBox>
                         </TitledPane>
                         <TitledPane alignment="TOP_LEFT" text="系统维护">
                             <VBox minHeight="130" spacing="10" styleClass="dark-theme">
-                                <Button styleClass="menu-btn" text="系统初始化" />
+                                <Button styleClass="menu-btn" text="公海池设置" />
                                 <Button styleClass="menu-btn" text="数据备份" />
                                 <Button styleClass="menu-btn" text="主题设置" />
                             </VBox>
