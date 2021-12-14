@@ -8,12 +8,13 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.ZoneId;
+
 /**
- * 线索池实体类
+ * 公海池实体类
  *
  * @author zwx
  */
-public class Customer {
+public class GonghaiCustomer {
     private final SimpleLongProperty id = new SimpleLongProperty();
     private final SimpleStringProperty name = new SimpleStringProperty("");
     private final SimpleStringProperty company = new SimpleStringProperty("");
@@ -23,10 +24,10 @@ public class Customer {
     private LocalDate createtime ;
 
 
-    public Customer() {
+    public GonghaiCustomer() {
     }
 
-    public Customer(Long id, String name, String company, String source, String detailed, String pool,  LocalDate createtime) {
+    public GonghaiCustomer(Long id, String name, String company, String source, String detailed, String pool, LocalDate createtime) {
         setId(id);
         setName(name);
         setCompany(company);

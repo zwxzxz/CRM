@@ -31,25 +31,17 @@ public class DaoFactory {
         return new SourceCategoryDAOImpl();
     }
 
-
-
-    /**
-     * 静态方法，返回CategoryDAO实现类的对象
-     *
-     * @return CategoryDAO
-     */
-    public static CategoryDAO getCategoryDAOInstance() {
-        return new CategoryDAOImpl();
-    }
-
     /**
      * 静态方法，返回TypeDAO实现类的对象
      *
-     * @return BookDAO
+     * @return xiansuoCustomerDAO
      */
-    public static BookDAO getBookDAOInstance() {
-        return new BookDAOImpl();
+    public static xiansuoCustomerDAO getxiansuoCustomerDAOInstance(){
+        return new xiansuoCustomerDAOImpl();
     }
+
+
+
 
 
     /**

@@ -38,18 +38,19 @@ public class MainController implements Initializable {
     public void listxiansuochi() throws Exception {
         switchView("xiansuochi.fxml");
     }
+    public void listxiansuo() throws Exception {
+        switchView("xiansuo.fxml");
+    }
+
+    public void sourcecategory() throws Exception {
+        switchView("sourcecategory.fxml");
+    }
 
     public void listDefault() throws Exception {
         switchView("default.fxml");
     }
 
-    public void listType() throws Exception {
-        switchView("category.fxml");
-    }
 
-    public void showWebView() throws Exception {
-        switchView("webview.fxml");
-    }
 
 
     public void viewBook() throws Exception {

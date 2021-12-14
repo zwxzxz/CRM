@@ -2,9 +2,7 @@ package top.zwx.crm.manage.dao.impl;
 
 import cn.hutool.db.Db;
 import cn.hutool.db.Entity;
-import top.zwx.crm.manage.dao.CategoryDAO;
 import top.zwx.crm.manage.dao.SourceCategoryDAO;
-import top.zwx.crm.manage.entity.Category;
 import top.zwx.crm.manage.entity.SourceCategory;
 
 import java.sql.SQLException;

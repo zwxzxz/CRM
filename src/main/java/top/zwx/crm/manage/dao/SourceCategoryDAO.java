@@ -1,7 +1,6 @@
 package top.zwx.crm.manage.dao;
 
 import cn.hutool.db.Entity;
-import top.zwx.crm.manage.entity.Category;
 import top.zwx.crm.manage.entity.SourceCategory;
 
 import java.sql.SQLException;

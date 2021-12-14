@@ -3,9 +3,7 @@ package top.zwx.crm.manage.dao.impl;
 import cn.hutool.db.Db;
 import cn.hutool.db.Entity;
 import cn.hutool.db.sql.Condition;
-import top.zwx.crm.manage.dao.BookDAO;
 import top.zwx.crm.manage.dao.CustomerDAO;
-import top.zwx.crm.manage.entity.Book;
 import top.zwx.crm.manage.entity.Customer;
 
 
@@ -39,9 +37,21 @@ public class CustomerDAOImpl implements CustomerDAO {
         );
     }
 
+
     @Override
-    public int update(Customer customer) throws SQLException {
-        return 0;
+    public int update(Customer customer,long id) throws SQLException {
+        Db.use().insertForGeneratedKey(
+                Entity.create("t_xiansuo")
+                        .set("name",customer.getName())
+                        .set("company",customer.getCompany())
+                        .set("source",customer.getSource())
+                        .set("detailed",customer.getDetailed())
+                        .set("pool",customer.getPool())
+                        .set("createtime",customer.getCreatetime())
+        );
+        return Db.use().del(
+                Entity.create("t_xiansuochi").set("id", id)
+        );
     }
 
     //@Override

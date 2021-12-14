@@ -1,7 +1,6 @@
 package top.zwx.crm.manage.dao;
 
 import cn.hutool.db.Entity;
-import top.zwx.crm.manage.entity.Book;
 import top.zwx.crm.manage.entity.Customer;
 
 import java.sql.SQLException;
@@ -36,7 +35,7 @@ public interface CustomerDAO {
      * @param customer customer
      * @return int
      */
-    int update(Customer customer) throws SQLException;
+    int update(Customer customer,long id) throws SQLException;
 
 
     /**
