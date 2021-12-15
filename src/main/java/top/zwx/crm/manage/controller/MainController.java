@@ -54,7 +54,15 @@ public class MainController implements Initializable {
     public void listconsumer() throws Exception {
         switchView("consumer.fxml");
     }
-
+    public void highseaspoolsourcecategory() throws Exception {
+        switchView("highseaspoolsourcecategory.fxml");
+    }
+    public void highseaspoolgradecategory() throws Exception {
+        switchView("highseaspoolgradecategory.fxml");
+    }
+    public void highseaspoolpoolcategory() throws Exception {
+        switchView("highseaspoolpoolcategory.fxml");
+    }
 
 
 

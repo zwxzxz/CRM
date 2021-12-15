@@ -68,8 +68,10 @@
                         <TitledPane alignment="TOP_LEFT" text="系统维护">
                             <VBox minHeight="130" spacing="10" styleClass="dark-theme">
                                 <Button styleClass="menu-btn" text="线索来源设置" onAction="#cluesourcecategory" />
-                                <Button styleClass="menu-btn" text="公海池设置" />
-                                <Button styleClass="menu-btn" text="主题设置" />
+                                <Button styleClass="menu-btn" text="客户来源设置"  onAction="#highseaspoolsourcecategory" />
+                                <Button styleClass="menu-btn" text="客户级别设置"  onAction="#highseaspoolgradecategory" />
+                                <Button styleClass="menu-btn" text="客户公海池设置" onAction="#highseaspoolpoolcategory" />
+<!--                                <Button styleClass="menu-btn" text="主题设置" />-->
                             </VBox>
                         </TitledPane>
                     </panes>
