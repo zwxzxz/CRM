@@ -46,15 +46,15 @@
                     <panes>
                         <TitledPane alignment="TOP_LEFT" text="客户管理">
                             <VBox minHeight="100" spacing="10" styleClass="dark-theme">
-                                <Button onAction="#listxiansuochi" styleClass="menu-btn" text="线索池" />
-                                <Button onAction="#listxiansuo" styleClass="menu-btn" text="线索" />
-                                <Button onAction="#listgonghai" styleClass="menu-btn" text="公海池" />
-                                <Button mnemonicParsing="false" styleClass="menu-btn" text="客户" />
+                                <Button onAction="#listcluepool" styleClass="menu-btn" text="线索池" />
+                                <Button onAction="#listclue" styleClass="menu-btn" text="线索" />
+                                <Button onAction="#listhighseaspool" styleClass="menu-btn" text="公海池" />
+                                <Button onAction="#listconsumer"  styleClass="menu-btn" text="客户" />
                             </VBox>
                         </TitledPane>
                         <TitledPane alignment="TOP_LEFT" text="客户分析">
                             <VBox minHeight="130" spacing="10" styleClass="dark-theme">
-                                <Button onAction="#listUserAnalysis" styleClass="menu-btn" text="客户来源" />
+                                <Button onAction="#listClueAnalysis" styleClass="menu-btn" text="客户来源" />
                                 <Button onAction="#viewBook" styleClass="menu-btn" text="客户状态分析" />
                             </VBox>
                         </TitledPane>
@@ -67,7 +67,7 @@
                         </TitledPane>
                         <TitledPane alignment="TOP_LEFT" text="系统维护">
                             <VBox minHeight="130" spacing="10" styleClass="dark-theme">
-                                <Button styleClass="menu-btn" text="线索来源设置" onAction="#sourcecategory" />
+                                <Button styleClass="menu-btn" text="线索来源设置" onAction="#cluesourcecategory" />
                                 <Button styleClass="menu-btn" text="公海池设置" />
                                 <Button styleClass="menu-btn" text="主题设置" />
                             </VBox>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.zwx.crm.manage.controller.ConsumerController">
+    <HBox alignment="BOTTOM_CENTER" spacing="10" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="10">
+        <Button onAction="#export" styleClass="blue-theme,btn-radius" text="导出数据" />
+    </HBox>
+    <HBox alignment="CENTER" spacing="10" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="60">
+        <ComboBox fx:id="sourceCategoryComboBox" prefWidth="150" promptText="选择客户来源" />
+        <ComboBox fx:id="gradeCategoryComboBox" prefWidth="150" promptText="选择客户级别" />
+        <ComboBox fx:id="poolCategoryComboBox" prefWidth="150" promptText="选择所属公海" />
+        <TextField fx:id="keywordsField" promptText="请输入关键词" />
+        <Button onAction="#search" styleClass="green-theme" text="搜索" />
+    </HBox>
+    <TableView fx:id="consumerTable" prefWidth="1000" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="110">
+        <columns>
+            <TableColumn text="ID">
+                <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="客户名称">
+                <cellValueFactory>
+                    <PropertyValueFactory property="name" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="客户等级">
+                <cellValueFactory>
+                    <PropertyValueFactory property="grade" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="所属公海">
+                <cellValueFactory>
+                    <PropertyValueFactory property="pool" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="客户来源">
+                <cellValueFactory>
+                    <PropertyValueFactory property="source" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="创建时间">
+                <cellValueFactory>
+                    <PropertyValueFactory property="createtime" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="公司信息">
+                <cellValueFactory>
+                    <PropertyValueFactory property="company" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn text="客户详情">
+                <cellValueFactory>
+                    <PropertyValueFactory property="details" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</AnchorPane>

@@ -32,22 +32,27 @@ public class MainController implements Initializable {
         }
     }
 
-    public void listgonghai() throws Exception {
-        switchView("gonghaichi.fxml");
+
+    public void listcluepool() throws Exception {
+        switchView("cluepool.fxml");
     }
-    public void listxiansuochi() throws Exception {
-        switchView("xiansuochi.fxml");
-    }
-    public void listxiansuo() throws Exception {
-        switchView("xiansuo.fxml");
+    public void listclue() throws Exception {
+        switchView("clue.fxml");
     }
 
-    public void sourcecategory() throws Exception {
-        switchView("sourcecategory.fxml");
+    public void cluesourcecategory() throws Exception {
+        switchView("cluesourcecategory.fxml");
     }
 
     public void listDefault() throws Exception {
         switchView("default.fxml");
+    }
+
+    public void listhighseaspool() throws Exception {
+        switchView("highseaspool.fxml");
+    }
+    public void listconsumer() throws Exception {
+        switchView("consumer.fxml");
     }
 
 
@@ -57,8 +62,8 @@ public class MainController implements Initializable {
         switchView("view_book.fxml");
     }
 
-    public void listBookAnalysis() throws Exception {
-        switchView("book_analysis.fxml");
+    public void listClueAnalysis() throws Exception {
+        switchView("clue_analysis.fxml");
     }
 
     public void listAdmin() throws Exception {

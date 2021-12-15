@@ -5,7 +5,6 @@ package top.zwx.crm.manage.util;
 
 import top.zwx.crm.manage.dao.*;
 import top.zwx.crm.manage.dao.impl.*;
-import top.zwx.crm.manage.entity.Customer;
 
 /**
  * 工厂类，用静态方法来生成各个DAO实例
@@ -14,44 +13,78 @@ import top.zwx.crm.manage.entity.Customer;
  */
 public class DaoFactory {
     /**
-     * 静态方法，返回TypeDAO实现类的对象
+     * 静态方法，返回CluePoolDAO实现类的对象
      *
-     * @return CustomerDAO
+     * @return CluePoolDAO
      */
-    public static CustomerDAO getCustomerDAOInstance(){
-        return new CustomerDAOImpl();
+    public static CluePoolDAO getCluePoolDAOInstance(){
+        return new CluePoolDAOImpl();
     }
 
     /**
-     * 静态方法，返回SourceCategoryDAO实现类的对象
+     * 静态方法，返回ClueSourceCategoryDAO实现类的对象
      *
-     * @return SourceCategoryDAO
+     * @return ClueSourceCategoryDAO
      */
-    public static SourceCategoryDAO getSourceCategoryDAOInstance() {
-        return new SourceCategoryDAOImpl();
+    public static ClueSourceCategoryDAO getClueSourceCategoryDAOInstance() {
+        return new ClueSourceCategoryDAOImpl();
     }
 
     /**
-     * 静态方法，返回TypeDAO实现类的对象
+     * 静态方法，返回clueDAO实现类的对象
      *
-     * @return xiansuoCustomerDAO
+     * @return ClueDAO
      */
-    public static xiansuoCustomerDAO getxiansuoCustomerDAOInstance(){
-        return new xiansuoCustomerDAOImpl();
+    public static ClueDAO getclueDAOInstance(){
+        return new clueDAOImpl();
     }
-
-
-
-
 
     /**
-     * 静态方法，返回UserDAO实现类的对象
+     * 静态方法，返回HighSeasPoolDAO实现类的对象
      *
-     * @return UserDAO
+     * @return HighSeasPoolDAO
      */
-    public static UserDAO getUserDAOInstance() {
-        return new UserDAOImpl();
+    public static HighSeasPoolDAO getHighSeasPoolDAOInstance(){
+        return new HighSeasPoolDAOImpl();
     }
+
+    /**
+     * 静态方法，返回HighSeasPoolSourceCategoryDAO实现类的对象
+     *
+     * @return HighSeasPoolSourceCategoryDAO
+     */
+    public static HighSeasPoolSourceCategoryDAO getHighSeasPoolSourceCategoryDAOInstance() {
+        return new HighSeasPoolSourceCategoryDAOImpl();
+    }
+
+    /**
+     * 静态方法，返回HighSeasPoolGradeCategoryDAO实现类的对象
+     *
+     * @return HighSeasPoolGradeCategoryDAO
+     */
+    public static HighSeasPoolGradeCategoryDAO getHighSeasPoolGradeCategoryDAOInstance() {
+        return new HighSeasPoolGradeCategoryDAOImpl();
+    }
+
+    /**
+     * 静态方法，返回HighSeasPoolSourceCategoryDAO实现类的对象
+     *
+     * @return HighSeasPoolSourceCategoryDAO
+     */
+    public static HighSeasPoolPoolCategoryDAO getHighSeasPoolPoolCategoryDAOInstance() {
+        return new HighSeasPoolPoolCategoryDAOImpl();
+    }
+
+    /**
+     * 静态方法，返回ConsumerDAO实现类的对象
+     *
+     * @return ConsumerDAO
+     */
+    public static ConsumerDAO getConsumerDAOInstance() {
+        return new ConsumerDAOImpl();
+    }
+
+
 
     /**
      * 静态方法，返回AdminDAO实现类的对象
@@ -61,4 +94,6 @@ public class DaoFactory {
     public static AdminDAO getAdminDAOInstance() {
         return new AdminDAOImpl();
     }
+
+
 }

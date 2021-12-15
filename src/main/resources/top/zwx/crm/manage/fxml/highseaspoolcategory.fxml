@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.cell.PropertyValueFactory?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.zwx.crm.manage.controller.ClueSourceCategoryController">
+    <HBox spacing="20" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="10">
+        <Button onAction="#addCategory" styleClass="green-theme" text="添加线索来源类别" />
+    </HBox>
+    <!--表格视图，用来显示数据库中查询到的图书类别-->
+    <TableView fx:id="sourcecategoryTable" prefWidth="700" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="50">
+        <columns>
+            <!--ID列-->
+            <TableColumn text="ID">
+                <!--绑定线索池类别实体类中的id属性-->
+                <cellValueFactory>
+                    <PropertyValueFactory property="id" />
+                </cellValueFactory>
+            </TableColumn>
+            <!--类别名称列-->
+            <TableColumn text="类别名称">
+                <!--绑定线索池类别实体类中的sourcename属性-->
+                <cellValueFactory>
+                    <PropertyValueFactory property="sourcename" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+    </TableView>
+</AnchorPane>

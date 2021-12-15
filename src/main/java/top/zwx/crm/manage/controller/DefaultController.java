@@ -12,11 +12,11 @@ import java.util.ResourceBundle;
 
 /**
  * @program: crm-manage
- * @description:
+ * @description: 默认页
  * @author: zwx
  * @create: 2021-12-13 21:51
  **/
-public class DefaultController  implements Initializable {
+public class DefaultController implements Initializable {
     @FXML
     private WebView webView1;
 
