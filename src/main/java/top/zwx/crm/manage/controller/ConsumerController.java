@@ -381,7 +381,7 @@ public class ConsumerController implements Initializable {
      * 数据导出方法，采用hutool提供的工具类
      */
     public void export() {
-        ExcelExport.export(consumerList);
+        ExcelExport.export3(consumerList);
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("提示信息");
         alert.setHeaderText("公海池已导出!");

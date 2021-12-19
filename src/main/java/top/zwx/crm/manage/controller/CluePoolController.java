@@ -214,10 +214,7 @@ public class CluePoolController implements Initializable {
                         cluePool.setSource(entity.getStr("source"));
                         cluePool.setDetailed(entity.getStr("detailed"));
                         cluePool.setPool(entity.getStr("pool"));
-                        DatePicker datePicker = new DatePicker();
-                        datePicker.setValue(LocalDate.now());
-                        LocalDate createDate = datePicker.getValue();
-                        cluePool.setCreatetime(createDate);
+                        cluePool.setCreatetime(entity.getStr("createtime"));
                     } catch (SQLException e) {
                         e.printStackTrace();
                     }
@@ -235,11 +232,13 @@ public class CluePoolController implements Initializable {
                     nameLabel.getStyleClass().add("font-title");
                     Label authorLabel = new Label("公司：" + cluePool.getCompany());
                     Label priceLabel = new Label("线索来源：" + cluePool.getSource());
+                    Label poolLabel = new Label("公海池：" + cluePool.getPool());
+                    Label timeLabel = new Label("创建时间：" + cluePool.getCreatetime());
                     Label summaryLabel = new Label("线索详细：" + cluePool.getDetailed());
                     summaryLabel.setPrefWidth(400);
                     summaryLabel.setWrapText(true);
                     summaryLabel.getStyleClass().add("box");
-                    vBox.getChildren().addAll(nameLabel, authorLabel, priceLabel, summaryLabel);
+                    vBox.getChildren().addAll(nameLabel, authorLabel, priceLabel, poolLabel,timeLabel,summaryLabel);
                     Scene scene = new Scene(vBox, 640, 480);
                     //因为是一个新的窗口，需要重新读入一下样式表，这个界面就可以使用style.css样式表中的样式了
                     scene.getStylesheets().add(Objects.requireNonNull(Main.class.getResource("css/style.css")).toExternalForm());

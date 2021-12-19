@@ -18,7 +18,7 @@
         <ComboBox fx:id="sourceCategoryComboBox" prefWidth="150" promptText="选择客户来源" />
       <ComboBox fx:id="gradeCategoryComboBox" prefWidth="150" promptText="选择客户级别" />
       <ComboBox fx:id="poolCategoryComboBox" prefWidth="150" promptText="选择所属公海" />
-        <TextField fx:id="keywordsField" promptText="请输入关键词" />
+        <TextField fx:id="keywordsField" promptText="请输入公海关键词" />
         <Button onAction="#search" styleClass="green-theme" text="搜索" />
     </HBox>
     <TableView fx:id="highSeasPoolTable" prefWidth="1000" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="110">

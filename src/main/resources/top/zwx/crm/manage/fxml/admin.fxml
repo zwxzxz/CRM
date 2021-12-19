@@ -1,8 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="top.zwx.crm.manage.controller.AdminController">
-    <Label text="管理员管理" styleClass="font-title" AnchorPane.topAnchor="10"
-           AnchorPane.leftAnchor="50"/>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.zwx.crm.manage.controller.AdminController">
+    <Label styleClass="font-title" text="管理员管理" AnchorPane.leftAnchor="50" AnchorPane.topAnchor="10" />
+    <GridPane hgap="5.0" layoutX="85.0" layoutY="148.0" vgap="5.0" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+        <ImageView fx:id="avatar" fitHeight="100.0" fitWidth="109.0" pickOnBounds="true" preserveRatio="true"
+                   GridPane.rowSpan="5">
+            <GridPane.margin>
+                <Insets right="20.0"/>
+            </GridPane.margin>
+            <Image url="@../img/avater.jpg"/>
+        </ImageView>
+            <Label fx:id="nameLabel" text="姓名：zwx" GridPane.columnIndex="1" />
+            <Label fx:id="clazzLabel" text="联系电话：156xxxx4545" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <Label fx:id="genderLabel" text="邮箱：2574802744@qq.com" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <Label fx:id="addressLabel" text="角色：企业创始人、销售总监" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <Label fx:id="birthdayLabel" text="部门：销售部" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+
+
+    </GridPane>
 </AnchorPane>

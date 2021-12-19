@@ -21,7 +21,7 @@ import java.util.Objects;
 import java.util.ResourceBundle;
 
 /**
- * @author mqxu
+ * @author zwx
  */
 public class AdminController implements Initializable {
     @FXML

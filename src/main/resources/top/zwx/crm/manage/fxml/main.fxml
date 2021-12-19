@@ -36,7 +36,7 @@
                     </Circle>
                 </clip>
             </ImageView>
-            <Button onMouseClicked="#exit" styleClass="blue-theme" text="退出系统" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20" />
+            <Button onMouseClicked="#exit" styleClass="warning-theme" text="退出系统" AnchorPane.rightAnchor="20" AnchorPane.topAnchor="20" />
         </AnchorPane>
     </top>
     <center>
@@ -54,15 +54,15 @@
                         </TitledPane>
                         <TitledPane alignment="TOP_LEFT" text="客户分析">
                             <VBox minHeight="130" spacing="10" styleClass="dark-theme">
-                                <Button onAction="#listClueAnalysis" styleClass="menu-btn" text="客户来源" />
-                                <Button onAction="#viewBook" styleClass="menu-btn" text="客户状态分析" />
+                                <Button onAction="#listSourceAnalysis" styleClass="menu-btn" text="客户来源分析" />
+                                <Button onAction="#listGradeAnalysis" styleClass="menu-btn" text="客户等级分析" />
+                                <Button onAction="#listPoolAnalysis" styleClass="menu-btn" text="客户所属池分析" />
                             </VBox>
                         </TitledPane>
                         <TitledPane alignment="TOP_LEFT" text="用户管理">
                             <VBox minHeight="130" spacing="10" styleClass="dark-theme">
                                 <Button onAction="#listAdmin" styleClass="menu-btn" text="管理员信息" />
                                 <Button onAction="#listUser" styleClass="menu-btn" text="员工信息" />
-                                <Button onAction="#listUserAnalysis" styleClass="menu-btn" text="统计分析" />
                             </VBox>
                         </TitledPane>
                         <TitledPane alignment="TOP_LEFT" text="系统维护">

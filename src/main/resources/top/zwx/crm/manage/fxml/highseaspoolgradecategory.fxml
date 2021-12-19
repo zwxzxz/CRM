@@ -11,19 +11,19 @@
     <HBox spacing="20" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="10">
         <Button onAction="#addCategory" styleClass="green-theme" text="添加客户级别类别" />
     </HBox>
-    <!--表格视图，用来显示数据库中查询到的线索来源类别-->
+    <!--表格视图，用来显示数据库中查询到的级别类别-->
     <TableView fx:id="gradecategoryTable" prefWidth="700" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="50">
         <columns>
             <!--ID列-->
             <TableColumn text="ID">
-                <!--绑定线索池类别实体类中的id属性-->
+                <!--绑定类别实体类中的id属性-->
                 <cellValueFactory>
                     <PropertyValueFactory property="id" />
                 </cellValueFactory>
             </TableColumn>
             <!--类别名称列-->
             <TableColumn text="类别名称">
-                <!--绑定线索池类别实体类中的gradename属性-->
+                <!--绑定类别实体类中的gradename属性-->
                 <cellValueFactory>
                     <PropertyValueFactory property="gradename" />
                 </cellValueFactory>

@@ -74,7 +74,7 @@ public class CluePoolDAOImpl implements CluePoolDAO {
     }
 
     @Override
-    public int countByCategory(String source) throws SQLException {
-        return Db.use().queryNumber("SELECT COUNT(*) FROM t_cluepool WHERE source = ? ", source).intValue();
+    public int countByCategory(Long categoryId) throws SQLException {
+        return Db.use().queryNumber("SELECT COUNT(*) FROM t_cluepool WHERE category = ? ", categoryId).intValue();
     }
 }

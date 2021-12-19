@@ -70,4 +70,21 @@ public class ConsumerDAOImpl implements ConsumerDAO {
     public List<Entity> selectByPoolCategoryId(long categoryId) throws SQLException {
         return Db.use().query("SELECT * FROM t_consumer WHERE poolid = ? ", categoryId);
     }
+
+    @Override
+    public int countBySourceCategory(Long categoryId) throws SQLException {
+        return Db.use().queryNumber("SELECT COUNT(*) FROM t_highseaspool WHERE sourceid = ? ", categoryId).intValue();
+    }
+
+    @Override
+    public int countByGradeCategory(Long categoryId) throws SQLException {
+        return Db.use().queryNumber("SELECT COUNT(*) FROM t_highseaspool WHERE gradeid = ? ", categoryId).intValue();
+    }
+
+    @Override
+    public int countByPoolCategory(Long categoryId) throws SQLException {
+        return Db.use().queryNumber("SELECT COUNT(*) FROM t_highseaspool WHERE poolid = ? ", categoryId).intValue();
+    }
+
+
 }

@@ -79,5 +79,28 @@ public interface ConsumerDAO {
      */
     List<Entity> selectByPoolCategoryId(long categoryId) throws SQLException;
 
+    /**
+     * 根据来源统计客户数量
+     *
+     * @param categoryId 来源
+     * @return int
+     */
+    int countBySourceCategory(Long categoryId) throws SQLException;
 
+    /**
+     * 根据客户等级统计客户数量
+     *
+     * @param categoryId 等级
+     * @return int
+     */
+    int countByGradeCategory(Long categoryId) throws SQLException;
+
+
+    /**
+     * 根据所属公海池统计客户数量
+     *
+     * @param categoryId 所属公海池
+     * @return int
+     */
+    int countByPoolCategory(Long categoryId) throws SQLException;
 }

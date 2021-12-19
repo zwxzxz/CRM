@@ -9,21 +9,21 @@
 
 <AnchorPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.zwx.crm.manage.controller.HighSeasPoolPoolCategoryController">
     <HBox spacing="20" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="10">
-        <Button onAction="#addCategory" styleClass="green-theme" text="添加客户公海池类别" />
+        <Button onAction="#addCategory" styleClass="green-theme" text="添加客户所属公海类别" />
     </HBox>
-    <!--表格视图，用来显示数据库中查询到的线索来源类别-->
+    <!--表格视图，用来显示数据库中查询到的公海池类别-->
     <TableView fx:id="poolcategoryTable" prefWidth="700" AnchorPane.leftAnchor="20" AnchorPane.topAnchor="50">
         <columns>
             <!--ID列-->
             <TableColumn text="ID">
-                <!--绑定线索池类别实体类中的id属性-->
+                <!--绑定类别实体类中的id属性-->
                 <cellValueFactory>
                     <PropertyValueFactory property="id" />
                 </cellValueFactory>
             </TableColumn>
             <!--类别名称列-->
             <TableColumn text="类别名称">
-                <!--绑定线索池类别实体类中的poolname属性-->
+                <!--绑定类别实体类中的poolname属性-->
                 <cellValueFactory>
                     <PropertyValueFactory property="poolname" />
                 </cellValueFactory>

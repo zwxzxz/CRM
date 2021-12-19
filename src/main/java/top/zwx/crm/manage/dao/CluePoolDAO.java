@@ -73,8 +73,8 @@ public interface CluePoolDAO {
     /**
      * 根据线索来源统计客户数量
      *
-     * @param source 线索来源
+     * @param categoryId 线索来源
      * @return int
      */
-    int countByCategory(String source) throws SQLException;
+    int countByCategory(Long categoryId) throws SQLException;
 }

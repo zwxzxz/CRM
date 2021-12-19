@@ -18,9 +18,9 @@
         <TextField fx:id="highSeasPoolName" promptText="客户姓名" />
         <TextField fx:id="highSeasPoolCompany" promptText="所在公司" />
         <HBox spacing="10">
-            <ComboBox fx:id="highSeasPoolSource" prefHeight="26.0" prefWidth="173.0" promptText="请选择线索来源" />
+            <ComboBox fx:id="highSeasPoolSource" prefHeight="26.0" prefWidth="173.0" promptText="请选择客户来源" />
             <ComboBox fx:id="highSeasPoolGrade" prefHeight="26.0" prefWidth="173.0" promptText="请选择客户等级" />
-            <ComboBox fx:id="highSeasPoolPool" prefHeight="26.0" prefWidth="173.0" promptText="请选择所属公海池" />
+            <ComboBox fx:id="highSeasPoolPool" prefHeight="26.0" prefWidth="173.0" promptText="请选择公海池" />
         </HBox>
         <TextArea fx:id="highSeasPoolDetailer" prefHeight="140" promptText="客户详细" />
         <padding>

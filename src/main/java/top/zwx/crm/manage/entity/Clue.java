@@ -22,12 +22,12 @@ public class Clue {
     private final SimpleStringProperty detailed = new SimpleStringProperty("");
     private final SimpleStringProperty pool = new SimpleStringProperty("");
     private LocalDate createtime ;
-
+    private final SimpleLongProperty category = new SimpleLongProperty();
 
     public Clue() {
     }
 
-    public Clue(Long id, String name, String company, String source, String detailed, String pool, LocalDate createtime) {
+    public Clue(Long id, String name, String company, String source, String detailed, String pool, LocalDate createtime,Long category) {
         setId(id);
         setName(name);
         setCompany(company);
@@ -35,6 +35,7 @@ public class Clue {
         setDetailed(detailed);
         setPool(pool);
         setCreatetime(createtime);
+        setCategory(category);
     }
 
 
@@ -108,6 +109,18 @@ public class Clue {
 
     public void setPool(String pool) {
         this.pool.set(pool);
+    }
+
+    public long getCategory() {
+        return category.get();
+    }
+
+    public SimpleLongProperty categoryProperty() {
+        return category;
+    }
+
+    public void setCategory(long category) {
+        this.category.set(category);
     }
 
     public LocalDate getCreatetime() {

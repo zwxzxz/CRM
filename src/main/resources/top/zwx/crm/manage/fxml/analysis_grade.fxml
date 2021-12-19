@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?import javafx.scene.layout.*?>
 <AnchorPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
-            fx:controller="top.zwx.crm.manage.controller.ClueAnalysisController">
+            fx:controller="top.zwx.crm.manage.controller.AnalysisGradeController">
     <GridPane hgap="10" vgap="10" AnchorPane.topAnchor="20">
         <StackPane fx:id="pieChartPane" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
         <StackPane fx:id="barChartPane" GridPane.columnIndex="1" GridPane.rowIndex="0"/>

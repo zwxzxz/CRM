@@ -95,5 +95,14 @@ public class DaoFactory {
         return new AdminDAOImpl();
     }
 
+    /**
+     * 静态方法，返回UserDAO实现类的对象
+     *
+     * @return UserDAO
+     */
+    public static UserDAO getUserDAOInstance() {
+        return new UserDAOImpl();
+    }
+
 
 }

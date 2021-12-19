@@ -9,7 +9,7 @@ import java.time.LocalDateTime;
 
 /**
  * @description:
- * @author: mqxu
+ * @author: zwx
  * @date: 2021-12-10
  **/
 @Data
@@ -21,4 +21,5 @@ public class Admin {
     private String account;
     private String password;
     private LocalDateTime createTime;
+    private String picture;
 }

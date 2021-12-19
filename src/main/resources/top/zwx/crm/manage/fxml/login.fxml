@@ -22,10 +22,10 @@
         <Label styleClass="font-gray" text="客户关系管理系统后台" AnchorPane.leftAnchor="147.0" AnchorPane.topAnchor="63.0" />
         <VBox prefWidth="330" spacing="20" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="90.0">
             <!--focusTraversable="false"：让输入框不获取焦点-->
-            <TextField fx:id="accountField" focusTraversable="false" promptText="账号" />
+            <TextField fx:id="accountField" focusTraversable="false" promptText="账号"  />
             <PasswordField fx:id="passwordField" focusTraversable="false" promptText="密码" />
             <HBox spacing="20">
-                <TextField focusTraversable="false" prefWidth="180" promptText="验证码" />
+                <TextField focusTraversable="false" prefWidth="180" promptText="验证码"  />
                 <ImageView fitHeight="30" fitWidth="80">
                     <Image url="@../img/verify.png" />
                 </ImageView>

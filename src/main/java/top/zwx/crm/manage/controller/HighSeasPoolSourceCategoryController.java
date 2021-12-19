@@ -98,9 +98,9 @@ public class HighSeasPoolSourceCategoryController implements Initializable {
     public void addCategory() {
         //创建一个输入对话框
         TextInputDialog dialog = new TextInputDialog("新类别");
-        dialog.setTitle("线索来源类别");
+        dialog.setTitle("客户来源类别");
         dialog.setHeaderText("新增类别");
-        dialog.setContentText("请输入线索来源名称:");
+        dialog.setContentText("请输入客户来源名称:");
         Optional<String> result = dialog.showAndWait();
         result.ifPresent(name -> System.out.println("你的输入： " + name));
         //确认输入了内容

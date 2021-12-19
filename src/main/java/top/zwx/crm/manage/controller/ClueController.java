@@ -284,7 +284,7 @@ public class ClueController implements Initializable {
      * 数据导出方法，采用hutool提供的工具类
      */
     public void export() {
-        ExcelExport.export(clueList);
+        ExcelExport.export1(clueList);
         Alert alert = new Alert(Alert.AlertType.INFORMATION);
         alert.setTitle("提示信息");
         alert.setHeaderText("线索已导出!");
