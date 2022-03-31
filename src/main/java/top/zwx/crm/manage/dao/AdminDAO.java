@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 /**
  * @description: AdminDAO
- * @author: mqxu
+ * @author: zwx
  * @date: 2021-12-10
  **/
 public interface AdminDAO {

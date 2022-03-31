@@ -42,7 +42,7 @@ public class ConsumerController implements Initializable {
     private TableView<Consumer> consumerTable;
 
     /**
-     * 布局文件中的下拉框组件对象，用来显示数据库中读取的所有公海池类别
+     * 布局文件中的下拉框组件对象，用来显示数据库中读取的所有类别
      */
     @FXML
     private ComboBox<HighSeasPoolSourceCategory> sourceCategoryComboBox;

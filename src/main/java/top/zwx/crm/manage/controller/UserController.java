@@ -100,7 +100,7 @@ public class UserController implements Initializable {
             delBtn.setOnAction(event -> {
                 Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
                 alert.setTitle("确认对话框");
-                alert.setContentText("确定要删除这行记录吗?");
+                alert.setContentText("确定要删除这位员工吗?");
                 Optional<ButtonType> result = alert.showAndWait();
                 if (result.get() == ButtonType.OK) {
                     try {

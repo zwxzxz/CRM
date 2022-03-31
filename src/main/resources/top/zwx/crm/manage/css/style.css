@@ -88,6 +88,10 @@
     -fx-background-color: #009688;
     -fx-text-fill: #fff;
 }
+.topbg{
+   -fx-background-color:  linear-gradient(to right,#2199ce,#5caf9e ,#ffffff);
+    -fx-text-fill: #fff;
+}
 
 /*灰色主题*/
 .gray-theme {
@@ -220,8 +224,9 @@
 
 /*左侧导航菜单按钮鼠标悬停效果*/
 .menu-btn:hover {
-    -fx-background-color: rgb(95, 184, 120);
+    /*-fx-background-color: rgb(95, 184, 120);*/
     -fx-text-fill: #fff;
+    -fx-background-color: linear-gradient(to right,rgb(95, 184, 120),#5caf9e );
 }
 
 /*风琴标题面板字体颜色*/

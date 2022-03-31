@@ -29,7 +29,6 @@ public class ExcelExport {
             cluePool.setCreatetime(entity.getDate("createtime").toString());
             cluePool.setCategory(entity.getLong("category"));
             cluePools.add(cluePool);
-
         }
         // 通过工具类创建writer
         ExcelWriter writer = ExcelUtil.getWriter("C:\\Users\\25748\\Desktop\\CluePools.xlsx");

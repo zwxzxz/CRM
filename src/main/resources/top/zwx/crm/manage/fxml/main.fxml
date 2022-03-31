@@ -17,7 +17,7 @@
 <?import javafx.scene.shape.Circle?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane styleClass="green-theme" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.zwx.crm.manage.controller.MainController">
+<BorderPane styleClass="topbg" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="top.zwx.crm.manage.controller.MainController">
     <top>
         <AnchorPane prefHeight="80.0">
             <Label onMouseClicked="#listDefault" text="客户关系管理后台" AnchorPane.leftAnchor="10" AnchorPane.topAnchor="20">

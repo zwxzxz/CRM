@@ -53,7 +53,7 @@ public class AnalysisGradeController implements Initializable {
             }
         }
         final PieChart chart = new PieChart(pieChartData);
-        chart.setTitle("按所属公海统计饼图");
+        chart.setTitle("按客户等级统计饼图");
         pieChartPane.getChildren().add(chart);
     }
 
@@ -62,8 +62,8 @@ public class AnalysisGradeController implements Initializable {
         final NumberAxis yAxis = new NumberAxis();
         final BarChart<String, Number> bc =
                 new BarChart<>(xAxis, yAxis);
-        bc.setTitle("根据所属公海统计柱形图");
-        xAxis.setLabel("所属公海");
+        bc.setTitle("根据客户等级统计柱形图");
+        xAxis.setLabel("客户等级");
         yAxis.setLabel("客户数量");
         XYChart.Series series1 = new XYChart.Series();
         series1.setName("统计数据");
